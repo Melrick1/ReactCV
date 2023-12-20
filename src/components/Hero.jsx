@@ -10,6 +10,7 @@ const Hero = () => {
             typeSpeed: 75,
             backSpeed: 60,
             loop: true,
+            
             onLastStringBackspaced: (self) => {
                 // Pause for 3000 milliseconds (3 seconds) between loops
                 setTimeout(() => {
@@ -27,7 +28,7 @@ const Hero = () => {
     }, []); // Empty dependency array to run the effect only once
 
     return(
-        <div className='hero'>
+        <section className='hero' id='home'>
             <div className='hero-container' data-aos='fade-in'>
                 <h1>Melrick</h1>
                 <p>I'm a <span className='typed'></span></p>
@@ -39,7 +40,7 @@ const Hero = () => {
                     <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

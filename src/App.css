@@ -4,4 +4,32 @@
   text-align: center;
 }
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.content section{
+  width: 100vw;
+}
+
+/* Large screens */
+@media only screen and (min-width: 481px){
+  :root{
+    overflow-x: hidden;
+  }
+
+  .content{
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+}
+
+/* Small screens */
+@media only screen and (max-width: 480px){
+  .content{
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}

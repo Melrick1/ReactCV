@@ -4,12 +4,18 @@ import './App.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import Navigation from './components/Nav'
 import Hero from './components/Hero'
+import About from './components/About'
+import Resume from './components/Resume'
 
 function App() {
   return (
     <>
       <Navigation/>
-      <Hero/>
+      <main className='content'>
+        <Hero/>
+        <About/>
+        <Resume/>
+      </main>
     </>
   )
 }
