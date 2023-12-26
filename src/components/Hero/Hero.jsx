@@ -1,4 +1,4 @@
-import '../assets/css/Hero.css'
+import './Hero.css'
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 

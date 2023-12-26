@@ -1,4 +1,4 @@
-import '../assets/css/About.css'
+import './About.css'
 
 const About = () => {
     return(
