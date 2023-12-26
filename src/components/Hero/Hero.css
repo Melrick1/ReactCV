@@ -7,6 +7,7 @@
 
 /* Background Tint */
 .hero:after {
+    height: 100dvh;
     position: absolute;
     content: "";
     background: rgba(0, 0, 0, 0.5);
@@ -21,7 +22,7 @@
 .hero-container{
     position: relative;
     z-index: 1;
-    margin-top: 12rem;
+    margin-top: 10rem;
 }
 
 .hero p{
@@ -43,7 +44,7 @@
     background: #212431;
     color: #fff;
     line-height: 1;
-    margin-right: 6px;
+    margin: 3px;
     border-radius: 50%;
     text-align: center;
     width: 40px;
@@ -56,4 +57,24 @@
     margin: 10px;
 }
 
-  
+/* Start Button */
+.start-button{
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    margin-top: 2rem;
+    animation: bobbing 2s ease-in-out infinite;
+}
+
+.start-button:hover{
+    color: gold;
+}
+
+@keyframes bobbing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

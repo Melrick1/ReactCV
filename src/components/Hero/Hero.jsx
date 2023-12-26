@@ -1,12 +1,13 @@
 import './Hero.css'
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Typed from 'typed.js';
 
 const Hero = () => {
+    {/* Typing animation */}
     useEffect(() => {
         // Initialize Typed.js after the component has mounted
         const options = {
-            strings: ["Designer", "Developer", "Freelancer", "Photographer"],
+            strings: ["Designer", "Developer", "Freelancer"],
             typeSpeed: 75,
             backSpeed: 60,
             loop: true,
@@ -39,6 +40,7 @@ const Hero = () => {
                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                     <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                 </div>
+                <a href="#about" className="start-button"><i class="bi bi-chevron-down"></i></a>
             </div>
         </section>
     )
